@@ -1,5 +1,6 @@
 package cian.og;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -7,14 +8,15 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        Random randomGen = new Random();
 
-	    int firstNumber = 2;
-	    int secondNumber = 5;
+	    int firstNumber = randomGen.nextInt(8) + 2;
+	    int secondNumber = randomGen.nextInt(8) + 2;
 
-	    var subtraction = 7;
+	    var subtraction = randomGen.nextInt(8) + 2;
 	    int answer;
 
-	    String prompt = ". Press ENTER when ready.";
+	    String prompt = ". Don't type the answer just press ENTER when ready.";
 
 	    System.out.println("Think of a number between 1 and 10" + prompt);
 	    scanner.nextLine();
