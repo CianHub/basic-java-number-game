@@ -11,7 +11,7 @@ public class Main {
 	    int firstNumber = 2;
 	    int secondNumber = 5;
 
-	    var subtraction = 6;
+	    var subtraction = 7;
 	    int answer;
 
 	    String prompt = ". Press ENTER when ready.";
@@ -26,6 +26,9 @@ public class Main {
         scanner.nextLine();
         System.out.println("Now subtract " + subtraction + prompt);
         scanner.nextLine();
+
+        answer = firstNumber * secondNumber - subtraction;
+        System.out.println("The answer is " + answer);
 
 	    scanner.close();
 
