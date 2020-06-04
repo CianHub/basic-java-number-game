@@ -14,9 +14,10 @@ public class Main {
 	    int secondNumber = randomGen.nextInt(8) + 2;
 
 	    var subtraction = randomGen.nextInt(8) + 2;
-	    int answer;
+	    int answer = firstNumber * secondNumber - subtraction;
 
-	    String prompt = ". Don't type the answer just press ENTER when ready.";
+
+        String prompt = ". Don't type the answer just press ENTER when ready.";
 
 	    System.out.println("Think of a number between 1 and 10" + prompt);
 	    scanner.nextLine();
@@ -29,7 +30,6 @@ public class Main {
         System.out.println("Now subtract " + subtraction + prompt);
         scanner.nextLine();
 
-        answer = firstNumber * secondNumber - subtraction;
         System.out.println("The answer is " + answer);
 
 	    scanner.close();
